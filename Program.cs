@@ -1,6 +1,13 @@
 ﻿LinqQueries queries = new LinqQueries();
 
+Console.WriteLine("================= GET ALL BOOKS =================");
 printValues(queries.getAllBooks());
+
+Console.WriteLine("================= GET BOOKS AFTER THE YEAR 2000 =================");
+printValues(queries.getBooksAfterTheYear2010());
+
+Console.WriteLine("================= GET BOOKS WITH MORE THAN 250 PAGES WITH IN ACTION WORD =================");
+printValues(queries.getBooksWithMoreThan250PagesWithInActionWord());
 
 void printValues(IEnumerable<Book> booksList)
 {
